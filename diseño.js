@@ -1,1 +1,0 @@
-alert(holp < kñxk < ññññññññññññxa);
