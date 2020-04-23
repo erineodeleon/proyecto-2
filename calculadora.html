@@ -7,34 +7,51 @@
     <title>calculadora</title>
 </head>
 
-<body>
-    <form id="formulario">
+<body background="fondos/imagenes/v2.jpeg">
 
-        <label> valor 1</label>
-        <input type="number" name="" id="valor 1" autofocus placeholder="escribe un numero">
 
-        <button onclick="limpiar();">eliminar datos</button>
-
+    <CEnter>
+        <h1>CALCULADORA</h1>
+        <P>introdusca los valores que dese operar</P>
         <br>
-        <br>
-        <label>valor 2</label>
-        <input type="number" name="" id="valor 2" autofocus placeholder="escribe un numero">
+    </CEnter>
+    <center>
+        <table class="calculadora" colspan="4">
+            <form id="formulario">
 
-        <br>
-        <br>
+                <label> valor 1</label>
+                <input type="number" name="" id="valor 1" autofocus placeholder="escribe un numero">
 
-        <button type="button" onclick="sumar();">sumar</button>
-        <button type="button" onclick="restar();">RESTAR</button>
-        <button type="button" onclick="multiplicar();">MULTIPLICAR</button>
-        <button type="button" onclick="dividir();">DIVIDIR</button>
-        <p>RESULTADO: <span id="el-resultado"></span> </p>
+                <button onclick="limpiar();">eliminar datos</button>
+
+                <br>
+                <br>
+                <label>valor 2</label>
+                <input type="number" name="" id="valor 2" autofocus placeholder="escribe un numero">
+
+                <br>
+                <br>
+
+                <button type="button" onclick="sumar();">SUMAR</button>
+                <button type="button" onclick="restar();">RESTAR</button>
+                <button type="button" onclick="multiplicar();">MULTIPLICAR</button>
+                <button type="button" onclick="dividir();">DIVIDIR</button>
+                <p>RESULTADO: <span id="el-resultado"></span> </p>
 
 
-    </form>
+            </form>
 
-    <script type="text/javascript" src="js/funciones.js">
-    </script>
+            <script type="text/javascript" src="js/funciones.js">
+                function restar() {
+                    var x = parseInt(document.getElementById("valor 1").Value);
+                    var y = parseInt(document.getElementById("valor 2").Value);
+                    document.getElementById("el-resultado").innerHTML = x - y;
+                }
+            </script>
+        </table>
 
 </body>
+</center>
+
 
 </html>

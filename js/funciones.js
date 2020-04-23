@@ -11,13 +11,13 @@ function sumar() {
 function restar() {
     var x = parseInt(document.getElementById("valor 1").Value);
     var y = parseInt(document.getElementById("valor 2").Value);
-    document.getElementById("el-resultado").innerHTML = (x - y);
+    document.getElementById("el-resultado").innerHTML = x - y;
 }
 
 function multiplicar() {
     var x = parseInt(document.getElementById("valor 1").Value);
     var y = parseInt(document.getElementById("valor 2").Value);
-    document.getElementById("el-resultado").innerHTML = (x * y);
+    document.getElementById("el-resultado").innerHTML = x.y;
 }
 
 function dividir() {
